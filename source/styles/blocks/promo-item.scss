@@ -1,0 +1,22 @@
+.promo-item {
+  text-align: center;
+}
+
+.promo-item__image {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.promo-item__mean {
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  color: $color-base-primary;
+}
+
+.promo-item__title {
+  margin: 0 0 10px;
+}
+
+.promo-item__description {
+  margin: 0 0 20px;
+}

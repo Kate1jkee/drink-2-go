@@ -1,0 +1,10 @@
+.user-list {
+  @include list;
+  display: flex;
+  align-items: center;
+}
+
+.user-list__link {
+  display: block;
+  padding: 22px;
+}

@@ -1,0 +1,58 @@
+.main-nav {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: $color-base-white;
+  border-top: 1px solid $color-base-secondary;
+  display: none /*уалить потом*/
+}
+
+.main-nav__list {
+  @include list;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav__link--current {
+  color: $color-base-primary;
+}
+
+.main-nav__item {
+  position: relative;
+  text-align: center;
+}
+
+.main-nav__item::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100vw; // 👈 ключ
+  height: 1px;
+
+  background-color: $color-base-secondary;
+}
+
+.main-nav__item:last-child::after {
+  content: "";
+  position: absolute;
+
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100vw;
+  height: 1px;
+
+  background-color: $color-base-secondary;
+}

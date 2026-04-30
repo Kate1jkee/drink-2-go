@@ -1,0 +1,15 @@
+.main-header {
+  background-color: $color-base-white;
+}
+
+.main-header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.main-header__logo {
+  display: block;
+}
