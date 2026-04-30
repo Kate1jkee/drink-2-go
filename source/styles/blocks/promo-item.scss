@@ -1,5 +1,6 @@
 .promo-item {
   text-align: center;
+  padding: 20px 0 60px;
 }
 
 .promo-item__image {
@@ -10,13 +11,44 @@
 .promo-item__mean {
   margin: 0 0 4px;
   text-transform: uppercase;
-  color: $color-base-primary;
+  color: $base-primary;
 }
 
 .promo-item__title {
   margin: 0 0 10px;
+   font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
 }
 
 .promo-item__description {
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
+  max-width: 280px;
+}
+
+.promo-item__mark {
+  margin: 0 0 4px;
+  text-transform: uppercase;
+  color: $base-primary;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.promo-item__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.promo-item__base-price {
+  color: $base-primary;
+  text-decoration: line-through;
+}
+
+.promo-item__discount-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
 }

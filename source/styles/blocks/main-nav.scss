@@ -1,11 +1,13 @@
 .main-nav {
   position: absolute;
   top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: $color-base-white;
-  border-top: 1px solid $color-base-secondary;
-  display: none /*уалить потом*/
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: $base-white;
+  border-top: 1px solid $base-secondary;
+  z-index: 10;
+  display: none /*потом удалить*/
 }
 
 .main-nav__list {
@@ -13,15 +15,47 @@
 }
 
 .main-nav__link {
-  display: block;
-  padding: 20px;
-  text-align: center;
-  text-transform: uppercase;
+  @include font-text-primary(12px, 133%, $base-black, 500);
   text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: $base-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: $base-secondary;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $base-primary;
+  }
+
+  &:active {
+    background: $base-secondary;
+  }
+
+  &--current {
+    color: $base-primary;
+
+    &::before {
+      background: $base-primary;
+    }
+  }
 }
 
 .main-nav__link--current {
-  color: $color-base-primary;
+  color: $base-primary;
 }
 
 .main-nav__item {
@@ -40,7 +74,7 @@
   width: 100vw; // 👈 ключ
   height: 1px;
 
-  background-color: $color-base-secondary;
+  background-color: $base-secondary;
 }
 
 .main-nav__item:last-child::after {
@@ -54,5 +88,5 @@
   width: 100vw;
   height: 1px;
 
-  background-color: $color-base-secondary;
+  background-color: $base-secondary;
 }

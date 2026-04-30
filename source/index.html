@@ -71,6 +71,7 @@
             />
           </picture>
         </a>
+        <div class="main-header__actions">
         <ul class="main-header__user-list user-list">
           <li class="user-list__item">
             <a class="user-list__link user-list__link--login" href="#">
@@ -87,7 +88,7 @@
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
-
+</div>
         <nav class="main-header__nav main-nav main-nav--open">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -95,7 +96,8 @@
                 class="main-nav__link main-nav__link--current"
                 href="#"
                 aria-current="page"
-                >Главная</a>
+                >Главная</a
+              >
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Каталог</a>
@@ -128,77 +130,67 @@
             <ul class="promo-selector__slider-list slider-list">
               <li class="slider-list__promo-item promo-item">
                 <!-- Первый слайд-->
-                <h3 class="promo-item__mean">Новинка</h3>
-                <h4 class="promo-item__title">Декаф Флэт Уайт</h4>
-                <p class="promo-item__description">
-                  Свежесваренный кофе без кофеина из Эфиопии с натуральным
-                  фермерским молоком — то, что нужно для расслабления после
-                  тяжёлого рабочего дня
-                </p>
                 <picture class="promo-item__image-container">
                   <source
-                    width="552"
-                    height="499"
+                    media="(min-width: 1440px)"
                     type="image/webp"
-                    media="(min-width: 1200px)"
                     srcset="
-                      ../raw/images/promo-white-drink-desktop@1x.webp 1x,
-                      ...                                             2x
+                      images/promo-white-drink-desktop@1x.webp 1x,
+                      images/promo-white-drink-desktop@2x.webp 2x
                     "
                   />
                   <source
-                    width="476"
-                    height="476"
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ../raw/images/promo-white-drink-tablet@1x.webp 1x,
-                      ...                                            2x
-                    "
-                  />
-                  <source
-                    width="280"
-                    height="270"
-                    type="image/webp"
-                    srcset="
-                      ../raw/images/promo-white-drink-mobile@1x.webp 1x,
-                      ...                                            2x
-                    "
-                  />
-                  <source
-                    width="600"
-                    height="600"
-                    type="image/png"
                     media="(min-width: 1440px)"
                     srcset="
-                      ../raw/images/promo-white-drink-desktop.png 1x,
-                      ...                                         2x
+                      images/promo-white-drink-desktop@1x.png 1x,
+                      images/promo-white-drink-desktop@2x.png 2x
                     "
                   />
                   <source
-                    width="476"
-                    height="476"
-                    type="image/png"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    srcset="
+                      images/promo-white-drink-tablet@1x.webp 1x,
+                      images/promo-white-drink-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
-                      ../raw/images/promo-white-drink-tablet.png 1x,
-                      ...                                        2x
+                      images/promo-white-drink-tablet@1x.png 1x,
+                      images/promo-white-drink-tablet@2x.png 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/promo-white-drink-mobile@1x.webp 1x,
+                      images/promo-white-drink-mobile@2x.webp 2x
                     "
                   />
                   <img
                     class="promo-item__image"
-                    src="../raw/images/promo-white-drink-mobile.png"
-                    srcset="2x"
+                    src="images/promo-white-drink-mobile@1x.png"
+                    srcset="images/promo-white-drink-mobile@2x.png 2x"
                     width="280"
                     height="280"
                     alt="Банка фирменного кофе Декаф Флэт Уайт"
                   />
                 </picture>
-                <div class="promo-item__price">
-                  <span class="promo-item__base-price">295₽</span>
-                  <span class="promo-item__discount-price">225₽</span>
+                <p class="promo-item__mark">Новинка</p>
+                <h3 class="promo-item__title">Декаф Флэт Уайт</h3>
+                <p class="promo-item__description">
+                  Свежесваренный кофе без кофеина из Эфиопии с натуральным
+                  фермерским молоком — то, что нужно для расслабления после
+                  тяжёлого рабочего дня
+                </p>
+                <div class="promo-item__footer">
+                  <div class="promo-item__price">
+                    <span class="promo-item__base-price">295₽</span>
+                    <span class="promo-item__discount-price">225₽</span>
+                  </div>
+                  <a class="promo-item__link button" href="#"> Заказать </a>
                 </div>
-                <a class="promo-item__link button" href="#"> Заказать </a>
               </li>
 
               <li class="slider-list__promo-item promo-item">

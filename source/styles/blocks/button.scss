@@ -1,0 +1,26 @@
+.button {
+  @include font-text-primary(14px, 143%, $base-white);
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  height: 36px;
+  width: fit-content;
+  border-radius: 4px;
+  background: $base-primary;
+
+  &:hover,
+  &:focus-visible {
+    background: $alt-primary-lighter;
+  }
+
+  &:active {
+    background: $alt-primary-darker;
+  }
+
+  &:disabled {
+    background: $base-grey;
+  }
+}

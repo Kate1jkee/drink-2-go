@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  @include font-text-primary(14px, 20px, $color-base-black);
+  @include font-text-primary(14px, 20px, $base-black);
 }
