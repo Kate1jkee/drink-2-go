@@ -72,23 +72,23 @@
           </picture>
         </a>
         <div class="main-header__actions">
-        <ul class="main-header__user-list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--login" href="#">
-              <span class="visually-hidden">Войти</span>
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--cart" href="#">
-              <span class="visually-hidden">Корзина</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="main-header__user-list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--login" href="#">
+                <span class="visually-hidden">Войти</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--cart" href="#">
+                <span class="visually-hidden">Корзина</span>
+              </a>
+            </li>
+          </ul>
 
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть или закрыть меню</span>
-        </button>
-</div>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть или закрыть меню</span>
+          </button>
+        </div>
         <nav class="main-header__nav main-nav main-nav--open">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -177,7 +177,7 @@
                     alt="Банка фирменного кофе Декаф Флэт Уайт"
                   />
                 </picture>
-                <p class="promo-item__mark">Новинка</p>
+                <p class="promo-item__mark">Новинка!</p>
                 <h3 class="promo-item__title">Декаф Флэт Уайт</h3>
                 <p class="promo-item__description">
                   Свежесваренный кофе без кофеина из Эфиопии с натуральным
@@ -195,152 +195,132 @@
 
               <li class="slider-list__promo-item promo-item">
                 <!-- Второй слайд-->
-                <h3 class="promo-item__mean">Новинка</h3>
-                <h4 class="promo-item__title">Лавандовый Латте</h4>
-                <p class="promo-item__description">
-                  Невероятное сочетание перуанской высокогорной арабики с
-                  молоком ламы и лавандовым сиропом унесёт вас прямо на вершину
-                  Радужных гор
-                </p>
                 <picture class="promo-item__image-container">
                   <source
-                    width="552"
-                    height="499"
+                    media="(min-width: 1440px)"
                     type="image/webp"
-                    media="(min-width: 1200px)"
                     srcset="
-                      ../raw/images/promo-white-drink-desktop@1x.webp 1x,
-                      ...                                             2x
+                      images/promo-latte-drink-desktop@1x.webp 1x,
+                      images/promo-latte-drink-desktop@2x.webp 2x
                     "
                   />
                   <source
-                    width="476"
-                    height="476"
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ../raw/images/promo-white-drink-tablet@1x.webp 1x,
-                      ...                                            2x
-                    "
-                  />
-                  <source
-                    width="280"
-                    height="270"
-                    type="image/webp"
-                    srcset="
-                      ../raw/images/promo-white-drink-mobile@1x.webp 1x,
-                      ...                                            2x
-                    "
-                  />
-                  <source
-                    width="600"
-                    height="600"
-                    type="image/png"
                     media="(min-width: 1440px)"
                     srcset="
-                      ../raw/images/promo-white-drink-desktop.png 1x,
-                      ...                                         2x
+                      images/promo-latte-drink-desktop@1x.png 1x,
+                      images/promo-latte-drink-desktop@2x.png 2x
                     "
                   />
                   <source
-                    width="476"
-                    height="476"
-                    type="image/png"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    srcset="
+                      images/promo-latte-drink-tablet@1x.webp 1x,
+                      images/promo-latte-drink-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
-                      ../raw/images/promo-white-drink-tablet.png 1x,
-                      ...                                        2x
+                      images/promo-latte-drink-tablet@1x.png 1x,
+                      images/promo-latte-drink-tablet@2x.png 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/promo-latte-drink-mobile@1x.webp 1x,
+                      images/promo-latte-drink-mobile@2x.webp 2x
                     "
                   />
                   <img
                     class="promo-item__image"
-                    src="../raw/images/promo-white-drink-mobile.png"
-                    srcset="2x"
+                    src="images/promo-latte-drink-mobile@1x.png"
+                    srcset="images/promo-latte-drink-mobile@2x.png 2x"
                     width="280"
                     height="280"
                     alt="Банка фирменного кофе Лавандовый Латте"
                   />
                 </picture>
-                <div class="promo-item__price">
-                  <span class="promo-item__base-price">295₽</span>
-                  <span class="promo-item__discount-price">225₽</span>
+                <p class="promo-item__mean">Новинка!</p>
+                <h3 class="promo-item__title">Лавандовый Латте</h3>
+                <p class="promo-item__description">
+                  Невероятное сочетание перуанской высокогорной арабики с
+                  молоком ламы и лавандовым сиропом унесёт вас прямо на вершину
+                  Радужных гор
+                </p>
+                <div class="promo-item__footer">
+                  <div class="promo-item__price">
+                    <span class="promo-item__base-price">295₽</span>
+                    <span class="promo-item__discount-price">225₽</span>
+                  </div>
+                  <a class="promo-item__link button" href="#"> Заказать </a>
                 </div>
-                <a class="promo-item__link button" href="#"> Заказать </a>
               </li>
 
               <li class="slider-list__promo-item promo-item">
                 <!-- Третий слайд-->
-                <h3 class="promo-item__mean">Новинка</h3>
-                <h4 class="promo-item__title">Тройной Эспрессо</h4>
-                <p class="promo-item__description">
-                  Мощнее укола адреналина, чернее самой тёмной ночи, этот
-                  тройной эспрессо из Колумбии покажет вам, что такое настоящая
-                  бодрость
-                </p>
                 <picture class="promo-item__image-container">
                   <source
-                    width="552"
-                    height="499"
+                    media="(min-width: 1440px)"
                     type="image/webp"
-                    media="(min-width: 1200px)"
                     srcset="
-                      ../raw/images/promo-white-drink-desktop@1x.webp 1x,
-                      ...                                             2x
+                      images/promo-espresso-drink-desktop@1x.webp 1x,
+                      images/promo-espresso-drink-desktop@2x.webp 2x
                     "
                   />
                   <source
-                    width="476"
-                    height="476"
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ../raw/images/promo-white-drink-tablet@1x.webp 1x,
-                      ...                                            2x
-                    "
-                  />
-                  <source
-                    width="280"
-                    height="270"
-                    type="image/webp"
-                    srcset="
-                      ../raw/images/promo-white-drink-mobile@1x.webp 1x,
-                      ...                                            2x
-                    "
-                  />
-                  <source
-                    width="600"
-                    height="600"
-                    type="image/png"
                     media="(min-width: 1440px)"
                     srcset="
-                      ../raw/images/promo-white-drink-desktop.png 1x,
-                      ...                                         2x
+                      images/promo-espresso-drink-desktop@1x.png 1x,
+                      images/promo-espresso-drink-desktop@2x.png 2x
                     "
                   />
                   <source
-                    width="476"
-                    height="476"
-                    type="image/png"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    srcset="
+                      images/promo-espresso-drink-tablet@1x.webp 1x,
+                      images/promo-espresso-drink-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
-                      ../raw/images/promo-white-drink-tablet.png 1x,
-                      ...                                        2x
+                      images/promo-espresso-drink-tablet@1x.png 1x,
+                      images/promo-espresso-drink-tablet@2x.png 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      images/promo-espresso-drink-mobile@1x.webp 1x,
+                      images/promo-espresso-drink-mobile@2x.webp 2x
                     "
                   />
                   <img
                     class="promo-item__image"
-                    src="../raw/images/promo-white-drink-mobile.png"
-                    srcset="2x"
+                    src="images/promo-espresso-drink-mobile@1x.png"
+                    srcset="images/promo-espresso-drink-mobile@2x.png 2x"
                     width="280"
                     height="280"
                     alt="Банка фирменного кофе Тройной Эспрессо"
                   />
                 </picture>
-                <div class="promo-item__price">
-                  <span class="promo-item__base-price">295₽</span>
-                  <span class="promo-item__discount-price">225₽</span>
+                <p class="promo-item__mean">Новинка</p>
+                <h3 class="promo-item__title">Тройной Эспрессо</h3>
+                <p class="promo-item__description">
+                  Мощнее укола адреналина, чернее самой тёмной ночи, этот
+                  тройной эспрессо из Колумбии покажет вам, что такое настоящая
+                  бодрость
+                </p>
+                <div class="promo-item__footer">
+                  <div class="promo-item__price">
+                    <span class="promo-item__base-price">295₽</span>
+                    <span class="promo-item__discount-price">225₽</span>
+                  </div>
+                  <a class="promo-item__link button" href="#"> Заказать </a>
                 </div>
-                <a class="promo-item__link button" href="#"> Заказать </a>
               </li>
             </ul>
           </div>
@@ -356,21 +336,17 @@
 
       <section class="main__advantages advantages">
         <div class="advantages__container container">
-          <h2 class="advantages__title">Преимущества</h2>
-          <p class="advantages__description">
-            Главные причины выбрать Drink2Go
-          </p>
+          <p class="advantages__mark">Преимущества</p>
+          <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
           <ul class="advantages__list benefits-list">
-            <li
-              class="benefits-list__benefits-card benefits-card benefits-card--speed"
-            >
+            <li class="benefits-list__item benefits-card benefits-card--speed">
               <h3 class="benefits-card__title">Скорость</h3>
               <p class="benefits-card__description">
                 Готовый напиток всегда под рукой — просто открой банку
               </p>
             </li>
             <li
-              class="benefits-list__benefits-card benefits-card benefits-card--convenience"
+              class="benefits-list__item benefits-card benefits-card--convenience"
             >
               <h3 class="benefits-card__title">Удобство</h3>
               <p class="benefits-card__description">
@@ -378,16 +354,14 @@
               </p>
             </li>
             <li
-              class="benefits-list__benefits-card benefits-card benefits-card--cheerfulness"
+              class="benefits-list__item benefits-card benefits-card--cheerfulness"
             >
               <h3 class="benefits-card__title">Бодрость</h3>
               <p class="benefits-card__description">
                 Сбалансированная доза кофеина даст мощный заряд энергии
               </p>
             </li>
-            <li
-              class="benefits-list__benefits-card benefits-card benefits-card--eco"
-            >
+            <li class="benefits-list__item benefits-card benefits-card--eco">
               <h3 class="benefits-card__title">Экологичность</h3>
               <p class="benefits-card__description">
                 Вся упаковка сделана из перерабатываемых материалов
@@ -581,238 +555,301 @@
 
           <ul class="catalog__list product-list">
             <li class="product-list__item product-card">
-              <a class="product-card__link product-card__link--title" href="#">
-                <h2 class="product-card__title">Декаф Флэт Уайт</h2>
-              </a>
-              <p>
-                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-              </p>
-              <span class="">225₽</span>
               <a class="product-card__link-image" href="#">
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="images/@1x.webp 1x, images/@2x.webp 2x"
+                    srcset="
+                      images/catalog-white-coffee@1x.webp 1x,
+                      images/catalog-white-coffee@2x.webp 2x
+                    "
                   />
                   <img
-                    class="product-card__images"
-                    src="images/@1x.png"
-                    srcset="images/@2x.png 2x"
-                    width="68"
-                    height="86"
-                    alt="Белая банка фирменного кофе drink2go"
+                    class="product-card__image"
+                    src="images/catalog-white-coffee@1x.png"
+                    srcset="images/catalog-white-coffee@2x.png 2x"
+                    width="130"
+                    height="188"
+                    alt="Белая банка фирменного кофе Декаф Флэт Уайт"
                   />
                 </picture>
               </a>
-              <a class="product-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="product-list__item product-card">
               <a class="product-card__link product-card__link--title" href="#">
-                <h2 class="product-card__title">Декаф Флэт Уайт</h2>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
               </a>
               <p>
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <span class="">225₽</span>
+              <div class="product-card__footer">
+                <span class="product-card__price">225₽</span>
+                <a class="product-card__button button button--add" href="#"
+                  >В корзину</a
+                >
+              </div>
+            </li>
+            <li class="product-list__item product-card">
               <a class="product-card__link-image" href="#">
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="images/@1x.webp 1x, images/@2x.webp 2x"
+                    srcset="
+                      images/catalog-purple-coffee@1x.webp 1x,
+                      images/catalog-purple-coffee@2x.webp 2x
+                    "
                   />
                   <img
-                    class="product-card__images"
-                    src="images/@1x.png"
-                    srcset="images/@2x.png 2x"
-                    width="68"
-                    height="86"
+                    class="product-card__image"
+                    src="images/catalog-purple-coffee@1x.png"
+                    srcset="images/catalog-purple-coffee@2x.png 2x"
+                    width="130"
+                    height="188"
                     alt="Фиолетовая банка фирменного кофе drink2go"
                   />
                 </picture>
               </a>
-              <a class="product-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="product-list__item product-card">
               <a class="product-card__link product-card__link--title" href="#">
-                <h2 class="product-card__title">Декаф Флэт Уайт</h2>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
               </a>
               <p>
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <span class="">225₽</span>
+              <div class="product-card__footer">
+                <span class="product-card__price">225₽</span>
+                <a class="product-card__button button button--add" href="#"
+                  >В корзину</a
+                >
+              </div>
+            </li>
+            <li class="product-list__item product-card">
               <a class="product-card__link-image" href="#">
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="images/@1x.webp 1x, images/@2x.webp 2x"
+                    srcset="
+                      images/catalog-black-coffee@1x.webp 1x,
+                      images/catalog-black-coffee@2x.webp 2x
+                    "
                   />
                   <img
-                    class="product-card__images"
-                    src="images/@1x.png"
-                    srcset="images/@2x.png 2x"
-                    width="68"
-                    height="86"
+                    class="product-card__image"
+                    src="images/catalog-black-coffee@1x.png"
+                    srcset="images/catalog-black-coffee@2x.png 2x"
+                    width="130"
+                    height="188"
                     alt="Черная банка фирменного кофе drink2go"
                   />
                 </picture>
               </a>
-              <a class="product-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="product-list__item product-card">
               <a class="product-card__link product-card__link--title" href="#">
-                <h2 class="product-card__title">Декаф Флэт Уайт</h2>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
               </a>
               <p>
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <span class="">225₽</span>
+              <div class="product-card__footer">
+                <span class="product-card__price">225₽</span>
+                <a class="product-card__button button button--add" href="#"
+                  >В корзину</a
+                >
+              </div>
+            </li>
+            <li class="product-list__item product-card">
               <a class="product-card__link-image" href="#">
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="images/@1x.webp 1x, images/@2x.webp 2x"
+                    srcset="
+                      images/catalog-pink-coffee@1x.webp 1x,
+                      images/catalog-pink-coffee@2x.webp 2x
+                    "
                   />
                   <img
-                    class="product-card__images"
-                    src="images/@1x.png"
-                    srcset="images/@2x.png 2x"
-                    width="68"
-                    height="86"
+                    class="product-card__image"
+                    src="images/catalog-pink-coffee@1x.png"
+                    srcset="images/catalog-pink-coffee@2x.png 2x"
+                    width="130"
+                    height="188"
                     alt="Розовая банка фирменного кофе drink2go"
                   />
                 </picture>
               </a>
-              <a class="product-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="product-list__item product-card">
               <a class="product-card__link product-card__link--title" href="#">
-                <h2 class="product-card__title">Декаф Флэт Уайт</h2>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
               </a>
               <p>
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <span class="">225₽</span>
+              <div class="product-card__footer">
+                <span class="product-card__price">225₽</span>
+                <a class="product-card__button button button--add" href="#"
+                  >В корзину</a
+                >
+              </div>
+            </li>
+            <li class="product-list__item product-card">
               <a class="product-card__link-image" href="#">
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="images/@1x.webp 1x, images/@2x.webp 2x"
+                    srcset="
+                      images/catalog-brown-coffee@1x.webp 1x,
+                      images/catalog-brown-coffee@2x.webp 2x
+                    "
                   />
                   <img
-                    class="product-card__images"
-                    src="images/@1x.png"
-                    srcset="images/@2x.png 2x"
-                    width="68"
-                    height="86"
+                    class="product-card__image"
+                    src="images/catalog-brown-coffee@1x.png"
+                    srcset="images/catalog-brown-coffee@2x.png 2x"
+                    width="130"
+                    height="188"
                     alt="Коричневая банка фирменного кофе drink2go"
                   />
                 </picture>
               </a>
-              <a class="product-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="product-list__item product-card">
               <a class="product-card__link product-card__link--title" href="#">
-                <h2 class="product-card__title">Декаф Флэт Уайт</h2>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
               </a>
               <p>
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <span class="">225₽</span>
+              <div class="product-card__footer">
+                <span class="product-card__price">225₽</span>
+                <a class="product-card__button button button--add" href="#"
+                  >В корзину</a
+                >
+              </div>
+            </li>
+            <li class="product-list__item product-card">
               <a class="product-card__link-image" href="#">
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="images/@1x.webp 1x, images/@2x.webp 2x"
+                    srcset="
+                      images/catalog-yellow-coffee@1x.webp 1x,
+                      images/catalog-yellow-coffee@2x.webp 2x
+                    "
                   />
                   <img
-                    class="product-card__images"
-                    src="images/@1x.png"
-                    srcset="images/@2x.png 2x"
-                    width="68"
-                    height="86"
+                    class="product-card__image"
+                    src="images/catalog-yellow-coffee@1x.png"
+                    srcset="images/catalog-yellow-coffee@2x.png 2x"
+                    width="130"
+                    height="188"
                     alt="Желтая банка фирменного кофе drink2go"
                   />
                 </picture>
               </a>
-              <a class="product-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="product-list__item product-card">
               <a class="product-card__link product-card__link--title" href="#">
-                <h2 class="product-card__title">Декаф Флэт Уайт</h2>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
               </a>
               <p>
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <span class="">225₽</span>
+              <div class="product-card__footer">
+                <span class="product-card__price">225₽</span>
+                <a class="product-card__button button button--add" href="#"
+                  >В корзину</a
+                >
+              </div>
+            </li>
+            <li class="product-list__item product-card">
               <a class="product-card__link-image" href="#">
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="images/@1x.webp 1x, images/@2x.webp 2x"
+                    srcset="
+                      images/catalog-orange-coffee@1x.webp 1x,
+                      images/catalog-orange-coffee@2x.webp 2x
+                    "
                   />
                   <img
-                    class="product-card__images"
-                    src="images/@1x.png"
-                    srcset="images/@2x.png 2x"
-                    width="68"
-                    height="86"
+                    class="product-card__image"
+                    src="images/catalog-orange-coffee@1x.png"
+                    srcset="images/catalog-orange-coffee@2x.png 2x"
+                    width="130"
+                    height="188"
                     alt="Оранжевая банка фирменного кофе drink2go"
                   />
                 </picture>
               </a>
-              <a class="product-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="product-list__item product-card">
               <a class="product-card__link product-card__link--title" href="#">
-                <h2 class="product-card__title">Декаф Флэт Уайт</h2>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
               </a>
               <p>
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <span class="">225₽</span>
+              <div class="product-card__footer">
+                <span class="product-card__price">225₽</span>
+                <a class="product-card__button button button--add" href="#"
+                  >В корзину</a
+                >
+              </div>
+            </li>
+            <li class="product-list__item product-card">
               <a class="product-card__link-image" href="#">
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="images/@1x.webp 1x, images/@2x.webp 2x"
+                    srcset="
+                      images/catalog-green-coffee@1x.webp 1x,
+                      images/catalog-green-coffee@2x.webp 2x
+                    "
                   />
                   <img
-                    class="product-card__images"
-                    src="images/@1x.png"
-                    srcset="images/@2x.png 2x"
-                    width="68"
-                    height="86"
+                    class="product-card__image"
+                    src="images/catalog-green-coffee@1x.png"
+                    srcset="images/catalog-green-coffee@2x.png 2x"
+                    width="130"
+                    height="188"
                     alt="Зеленая банка фирменного кофе drink2go"
                   />
                 </picture>
               </a>
-              <a class="product-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="product-list__item product-card">
               <a class="product-card__link product-card__link--title" href="#">
-                <h2 class="product-card__title">Декаф Флэт Уайт</h2>
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
               </a>
               <p>
                 Кофе без кофеина из Эфиопии с натуральным фермерским молоком
               </p>
-              <span class="">225₽</span>
+              <div class="product-card__footer">
+                <span class="product-card__price">225₽</span>
+                <a class="product-card__button button button--add" href="#"
+                  >В корзину</a
+                >
+              </div>
+            </li>
+            <li class="product-list__item product-card">
               <a class="product-card__link-image" href="#">
                 <picture>
                   <source
                     type="image/webp"
-                    srcset="images/@1x.webp 1x, images/@2x.webp 2x"
+                    srcset="
+                      images/catalog-blue-coffee@1x.webp 1x,
+                      images/catalog-blue-coffee@2x.webp 2x
+                    "
                   />
                   <img
-                    class="product-card__images"
-                    src="images/@1x.png"
-                    srcset="images/@2x.png 2x"
-                    width="68"
-                    height="86"
+                    class="product-card__image"
+                    src="images/catalog-blue-coffee@1x.png"
+                    srcset="images/catalog-blue-coffee@2x.png 2x"
+                    width="130"
+                    height="188"
                     alt="Синяя банка фирменного кофе drink2go"
                   />
                 </picture>
               </a>
-              <a class="product-card__button button" href="#">Заказать</a>
+              <a class="product-card__link product-card__link--title" href="#">
+                <h3 class="product-card__title">Декаф Флэт Уайт</h3>
+              </a>
+              <p>
+                Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </p>
+              <div class="product-card__footer">
+                <span class="product-card__price">225₽</span>
+                <a class="product-card__button button button--add" href="#"
+                  >В корзину</a
+                >
+              </div>
             </li>
           </ul>
           <div class="catalog__slider slider">
@@ -836,71 +873,59 @@
       </section>
     </main>
     <footer class="page__footer main-footer">
-      <div class="main-footer__container container">
-        <div class="main-footer__map-wrapper">
-          <h2 class="main-footer__title">Контакты</h2>
-          <div class="main-footer__map map">
-            <picture class="map__picture">
-              <source
-                width="1440"
-                height="400"
-                type="image/webp"
-                media="(min-width: 1200px)"
-                srcset="
-                  images/map-desktop@1x.webp 1x,
-                  images/map-desktop@2x.webp 2x
-                "
-              />
-              <source
-                width="768"
-                height="400"
-                type="image/webp"
-                media="(min-width: 768px)"
-                srcset="
-                  images/map-tablet@1x.webp 1x,
-                  images/map-tablet@2x.webp 2x
-                "
-              />
-              <source
-                width="320"
-                height="362"
-                type="image/webp"
-                srcset="
-                  images/map-mobile@1x.webp 1x,
-                  images/map-mobile@2x.webp 2x
-                "
-              />
-              <source
-                width="1440"
-                height="400"
-                type="image/png"
-                media="(min-width: 1340px)"
-                srcset="
-                  images/map-desktop@1x.png 1x,
-                  images/map-desktop@2x.png 2x
-                "
-              />
-              <source
-                width="768"
-                height="400"
-                type="image/png"
-                media="(min-width: 768px)"
-                srcset="
-                  images/map-tablet@1x.png 1x,
-                  images/map-tablet@2x.png 2x
-                "
-              />
-              <img
-                class="map__image"
-                src="../raw/images/map-pin-mobile.jpg"
-                srcset="2x"
-                width="320"
-                height="362"
-                alt="Офис компании по адресу Санкт-Петербург, набережная реки Карповки, дом 5"
-              />
-            </picture>
-          </div>
+      <div class="main-footer__map-wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="main-footer__map map">
+          <picture class="map__picture">
+            <source
+          media="(min-width: 1440px)"
+          type="image/webp"
+          srcset="
+            images/map-pin-desktop@1x.webp 1x,
+            images/map-pin-desktop@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          type="image/webp"
+          srcset="
+            images/map-pin-tablet@1x.webp 1x,
+            images/map-pin-tablet@2x.webp 2x
+          "
+        />
+        <source
+          type="image/webp"
+          srcset="
+            images/map-pin-mobile@1x.webp 1x,
+            images/map-pin-mobile@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            images/map-pin-desktop@1x.png 1x,
+            images/map-pin-desktop@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            images/map-pin-tablet@1x.png 1x,
+            images/map-pin-tablet@2x.png 2x
+          "
+        />
+        <img
+          class="map__image"
+          src="images/map-pin-mobile@1x.png"
+          srcset="images/map-pin-mobile@2x.png 2x"
+          width="320"
+          height="420"
+          alt="Офис компании по адресу Санкт-Петербург, набережная реки Карповки, дом 5"
+        />
+          </picture>
         </div>
+      </div>
+      <div class="main-footer__container container">
         <div class="main-footer__links links">
           <div class="links__wraper">
             <a class="links__logo logo" href="index.html">
@@ -935,22 +960,39 @@
           </div>
         </div>
         <div class="main-footer__shop shop">
+          <h2 class="shop__title">Интернет-магазин</h2>
           <ul class="shop__list">
-            <li class="shop__item">Каталог</li>
-            <li class="shop__item">Доставка</li>
-            <li class="shop__item">Способ оплаты</li>
-            <li class="shop__item">О нас</li>
+            <li class="shop__item">
+              <a class="shop__link" href="#">Каталог</a>
+            </li>
+            <li class="shop__item">
+              <a class="shop__link" href="#">Доставка</a>
+            </li>
+            <li class="shop__item">
+              <a class="shop__link" href="#">Способы оплаты</a>
+            </li>
+            <li class="shop__item">
+              <a class="shop__link" href="#">О нас</a>
+            </li>
           </ul>
         </div>
         <div class="main-footer__media media">
+          <h2 class="media__title">Медиа</h2>
           <ul class="media__list">
-            <li class="media__item">Блог</li>
-            <li class="media__item">Информация для СМИ</li>
-            <li class="media__item">Правовая информация</li>
+            <li class="media__item">
+              <a class="media__link" href="#">Блог</a>
+            </li>
+            <li class="media__item">
+              <a class="media__link" href="#">Информация для СМИ</a>
+            </li>
+            <li class="media__item">
+              <a class="media__link" href="#">Правовая информация</a>
+            </li>
           </ul>
         </div>
         <div class="main-footer__contacts contacts">
-          <p class="contacts__adress">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__address">
             Санкт-Петербург, набережная реки Карповки, дом 5
           </p>
           <a class="contacts__phone" href="tel:89999999999"

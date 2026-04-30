@@ -1,0 +1,43 @@
+.developer-info {
+  padding: 20px 0 30px;
+  text-align: center;
+}
+
+.developer-info__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  color: $base-grey;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  
+  &:hover,
+  &:focus-visible {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $alt-primary-darker;
+  }
+
+  &::after {
+    content: "";
+    width: 12px;
+    height: 16px;
+
+    background-color: currentColor;
+
+    mask-image: url("../../images/html-academy.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+
+    -webkit-mask-image: url("../../images/html-academy.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+  }
+}

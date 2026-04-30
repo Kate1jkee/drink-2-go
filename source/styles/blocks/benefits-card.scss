@@ -1,0 +1,35 @@
+.benefits-card {
+  position: relative;
+  padding-top: 66px;
+  text-align: center;
+}
+
+.benefits-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 52px;
+  height: 56px;
+
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-card--speed::before {
+  background-image: url("../../icons/icon-speed.svg");
+}
+
+.benefits-card--convenience::before {
+  background-image: url("../../icons/icon-convenience.svg");
+}
+
+.benefits-card--cheerfulness::before {
+  background-image: url("../../icons/icon-cheerfulness.svg");
+}
+
+.benefits-card--eco::before {
+  background-image: url("../../icons/icon-eco.svg");
+}

@@ -1,0 +1,29 @@
+.media {
+  padding: 20px 0;
+}
+
+.media__title {
+  margin: 0 0 12px;
+  color: $base-primary;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.media__list {
+  @include list;
+}
+
+.media__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.media__link {
+  color: $base-black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}

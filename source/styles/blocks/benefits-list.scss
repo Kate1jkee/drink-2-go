@@ -1,0 +1,22 @@
+.benefits-list {
+  @include list;
+}
+
+.benefits-card {
+  text-align: center;
+}
+
+.benefits-card:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.benefits-card__title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.benefits-card__description {
+  margin: 0;
+}

@@ -1,0 +1,23 @@
+.advantages {
+  background-color: $base-white;
+}
+
+.advantages__container {
+  padding: 50px 20px 60px;
+}
+
+.advantages__mark {
+  margin: 0 0 4px;
+  text-align: center;
+  color: $base-primary;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.advantages__title {
+  margin: 0 0 36px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+}

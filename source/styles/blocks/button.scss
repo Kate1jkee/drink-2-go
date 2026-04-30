@@ -24,3 +24,25 @@
     background: $base-grey;
   }
 }
+
+.button--add {
+  gap: 6px; 
+}
+
+.button--add::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+
+  background-color: currentColor;
+
+  mask-image: url("../../icons/menu-cart-plus.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  -webkit-mask-image: url("../../icons/menu-cart-plus.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}

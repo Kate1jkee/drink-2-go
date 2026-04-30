@@ -1,0 +1,20 @@
+.links__wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+.links__wraper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100vw; 
+  height: 1px;
+
+  background-color: $base-secondary;
+}
