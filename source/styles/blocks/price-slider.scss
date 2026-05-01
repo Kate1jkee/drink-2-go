@@ -1,0 +1,42 @@
+.price-slider.noUi-horizontal {
+  height: 4px;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  background: $alt-light-grey;
+  margin-bottom: 34px;
+
+  .noUi-handle {
+    top: -10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: $base-white;
+    border: 2px solid $alt-primary-lighter;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+}
+
+@include tablet {
+  .price-slider.noUi-horizontal {
+    margin-bottom: 30px;
+  }
+}
+
+@include desktop {
+  .price-slider.noUi-horizontal {
+    margin-bottom: 32px;
+  }
+}
+
+.price-slider .noUi-connects {
+  border-radius: 0;
+}
+
+.price-slider .noUi-connect {
+  background: $alt-primary-lighter;
+}

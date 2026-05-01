@@ -1,0 +1,190 @@
+.control {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  width: fit-content;
+}
+
+.control__pointer {
+  position: relative;
+  display: block;
+}
+
+.control__title {
+  @include font-text-primary(16px, 150%, $base-black);
+}
+
+.control__input {
+  @include font-text-primary(16px, 150%, $base-black, 500);
+  width: 134px;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px 10px;
+  text-align: center;
+  border: 2px solid $alt-primary-lighter;
+  background: $base-white;
+
+  &::placeholder {
+    color: $base-grey;
+  }
+
+  &:focus-visible {
+    outline-color: $alt-primary-darker;
+  }
+
+  &:disabled {
+    background: $bg-lightest-grey;
+    border-color: $alt-light-grey;
+  }
+}
+
+.control__input:disabled ~ .control__title {
+  color: $base-grey;
+}
+
+// Скрытие стрелок
+.control__input[type="number"] {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+// Радио-кнопка
+.control__input[type="radio"] ~ .control__pointer {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: $base-white;
+  border: 2px solid $base-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background: $base-white;
+  }
+}
+
+.control:hover
+  .control__input[type="radio"]:not(:checked):not(:disabled)
+  ~ .control__pointer,
+.control:focus-visible
+  .control__input[type="radio"]:not(:checked):not(:disabled)
+  ~ .control__pointer {
+  border-color: $base-primary;
+
+  &::before {
+    background: $alt-primary-opacity-025;
+  }
+}
+
+.control__input[type="radio"]:disabled:not(:checked) ~ .control__pointer {
+  border-color: $alt-light-grey;
+
+  &::before {
+    background: transparent;
+  }
+}
+
+.control__input[type="radio"]:disabled:checked ~ .control__pointer {
+  border-color: $alt-light-grey;
+
+  &::before {
+    background: $alt-light-grey;
+  }
+}
+
+.control__input[type="radio"]:checked ~ .control__pointer {
+  border-color: $base-primary;
+
+  &::before {
+    background: $base-primary;
+  }
+}
+
+// Чекбокс
+.control__input[type="checkbox"] ~ .control__pointer {
+  width: 38px;
+  height: 20px;
+  border-radius: 12px;
+  background: $base-grey;
+  border: 2px solid $base-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background: $base-white;
+  }
+}
+
+.control:hover
+  .control__input[type="checkbox"]:not(:checked):not(:disabled)
+  ~ .control__pointer,
+.control:focus-visible
+  .control__input[type="checkbox"]:not(:checked):not(:disabled)
+  ~ .control__pointer {
+  background: $alt-primary-opacity-025;
+  border-color: $alt-primary-lighter;
+}
+
+.control__input[type="checkbox"]:disabled:not(:checked) ~ .control__pointer {
+  background: $alt-light-grey;
+  border-color: $alt-light-grey;
+}
+
+.control__input[type="checkbox"]:checked ~ .control__pointer {
+  background: $base-primary;
+  border-color: $base-primary;
+
+  &::before {
+    transform: translate(calc(100% - 2px), -50%);
+  }
+}
+
+.control__input[type="checkbox"]:checked:disabled ~ .control__pointer {
+  background: $alt-light-grey;
+  border-color: $alt-light-grey;
+
+  &::before {
+    background: $base-grey;
+  }
+}
+
+// Селект
+.control__select {
+  @include font-text-primary(16px, 150%, $base-primary, 600);
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 4px 10px;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus-visible {
+    background: $base-secondary;
+  }
+}
+
+.control-group__title {
+  @include font-text-primary(16px, 150%, $base-black, 600);
+  margin-bottom: 20px;
+}
+
+.control-group__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

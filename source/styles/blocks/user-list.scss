@@ -57,3 +57,33 @@
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
 }
+
+@include tablet {
+    .user-list__link {
+    width: 60px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@include desktop {
+   .user-list__link {
+    width: auto;
+    padding: 0 20px;
+    gap: 8px;
+  }
+
+  .user-list__link--login::after {
+    content: "Войти";
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .user-list__link--cart::after {
+    content: "Корзина";
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}

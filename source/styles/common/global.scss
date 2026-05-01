@@ -6,4 +6,27 @@
 
 body {
   @include font-text-primary(14px, 20px, $base-black);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

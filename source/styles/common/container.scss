@@ -1,18 +1,21 @@
 .container {
-  width: 320px;
+  width: 100%;
+  max-width: 280px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 @include tablet {
-  .container {
-    width: 768px;
-    padding: 0 40px;
+ .container {
+    padding: 0 20px;
+    max-width: $container-tablet;
   }
 }
 
 @include desktop {
   .container {
-    width: 1440px;
-    padding: 0 100px;
+    padding: 0 40px;
+    max-width: $container-desktop;
   }
 }

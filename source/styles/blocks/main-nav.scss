@@ -7,8 +7,12 @@
   background-color: $base-white;
   border-top: 1px solid $base-secondary;
   z-index: 10;
-  display: none /*потом удалить*/
+   display: none;
 }
+/*
+.main-nav--open {
+  display: block;
+}*/
 
 .main-nav__list {
   @include list;
@@ -89,4 +93,37 @@
   height: 1px;
 
   background-color: $base-secondary;
+}
+
+@include tablet {
+   .main-nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-nav__item {
+    margin-right: 20px;
+  }
+
+  .main-nav__link {
+    display: block;
+    padding: 32px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $base-black;
+  }
+}
+
+@include desktop {
+   .main-nav__item {
+    margin-right: 20px;
+  }
+
+  .main-nav__link {
+    padding: 32px 20px;
+  }
 }

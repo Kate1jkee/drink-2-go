@@ -1,0 +1,23 @@
+.price-field__inputs {
+    display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+@include tablet {
+  .price-field__inputs {
+    gap: 20px;
+  }
+}
+
+.price-field__divider {
+ width: 8px;
+  height: 2px;
+  background: $base-grey;
+}
+
+@include desktop {
+  .price-field__divider {
+    width: 10px;
+  }
+}

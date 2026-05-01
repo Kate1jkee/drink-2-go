@@ -1,7 +1,4 @@
 /* здесь используйте глобальные переменные */
-$tablet-width: 768px;
-$desktop-width: 1440px;
-
 $base-primary: #7859cf;
 $base-secondary: #f0ebff;
 $base-grey: #bdbdbd;
@@ -19,3 +16,10 @@ $bg-espresso: #e5e6e8;
 $font-primary: "Montserrat", sans-serif;
 $font-weight-primary: 400;
 $font-weight-secondary: 700;
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1440px;
+
+$container-tablet: 728px;
+$container-desktop: 1360px;

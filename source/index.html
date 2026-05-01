@@ -6,42 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="preload" href="#" type="font/woff2" as="font" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link
-      rel="preload"
-      href="fonts/montserrat-bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/montserrat-extra-bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/montserrat-medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/montserrat-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/montserrat-semi-bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.css" />
     <script src="scripts/index.js" defer></script>
+    <script src="vendor/nouislider/nouislider.js"></script>
   </head>
   <body class="page__body">
     <header class="page__header main-header">
@@ -331,6 +298,9 @@
           >
             <span class="visually-hidden">Следующий слайд</span>
           </button>
+          <button class="slider-pagination-button" type="button"></button>
+          <button class="slider-pagination-button" type="button"></button>
+          <button class="slider-pagination-button" type="button"></button>
         </div>
       </section>
 
@@ -373,163 +343,146 @@
 
       <section class="main__filters filters">
         <div class="filters__container container">
-          <h2 class="filters_title">Фильтры для поиска</h2>
-          <p class="filters_description">Каталог кофейных напитков</p>
+          <h2 class="filters__title">Фильтры для поиска</h2>
+          <p class="filters__description">Каталог кофейных напитков</p>
           <form
-            class="filters__sort-form sort-form"
+            class="filters__form form"
             action="https://echo.htmlacademy.ru"
             method="get"
             data-test="filter"
           >
-            <fieldset class="sort-form__price-field price-field">
-              <legend class="price-field__title">Цена</legend>
-              <div class="price-field__wrapper">
-                <div class="price-field__conteiner">
+            <fieldset class="price-field control-group">
+              <legend class="control-group__title">Цена</legend>
+              <div class="price-slider"></div>
+              <div class="price-field__inputs">
+                <label class="control">
                   <input
-                    class="price-field__input price-field__input--min"
+                    class="control__input price-slider__min"
                     type="number"
-                    name="min_cost"
+                    name="min-cost"
                     value="0"
-                    min="0"
                     placeholder="0"
+                    step="100"
                   />
-                </div>
-                <div class="price-field__conteiner">
+                </label>
+                <span class="price-field__divider"></span>
+                <label class="control">
                   <input
-                    class="price-field__input price-field__input--max"
+                    class="control__input price-slider__max"
                     type="number"
-                    name="max_cost"
-                    value="900"
-                    min="0"
-                    placeholder="900"
+                    name="max-cost"
+                    placeholder="1000"
+                    step="100"
                   />
-                </div>
-              </div>
-              <div class="price-field__track">
-                <div class="price-field__scale">
-                  <div
-                    class="price-field__scale--current"
-                    style="right: 63px; width: 216px"
-                  >
-                    <button
-                      class="price-field__button button--min"
-                      type="button"
-                    >
-                      <span class="visually-hidden"
-                        >Регулиование минимального значения цены</span
-                      >
-                    </button>
-                    <button
-                      class="price-field__button button--max"
-                      type="button"
-                    >
-                      <span class="visually-hidden"
-                        >Регулиование максимального значения цены</span
-                      >
-                    </button>
-                  </div>
-                </div>
+                </label>
               </div>
             </fieldset>
-            <fieldset class="sort-form__options options">
-              <legend class="options__title">Наличие молока</legend>
-              <label class="options__control">
-                <input
-                  class="options__input visually-hidden"
-                  type="radio"
-                  name="type-of-milk"
-                  value="milk"
-                  checked
-                />
-                <span class="options__radio-pointer"></span>
-                <span class="options__radio-title">Неважно</span>
-              </label>
-              <label class="options__control">
-                <input
-                  class="options__input visually-hidden"
-                  type="radio"
-                  name="type-of-milk"
-                  value="animal-milk"
-                />
-                <span class="options__radio-pointer"></span>
-                <span class="options__radio-title">Только животное</span>
-              </label>
-              <label class="options__control">
-                <input
-                  class="options__input visually-hidden"
-                  type="radio"
-                  name="type-of-milk"
-                  value="plant-milk"
-                />
-                <span class="options__radio-pointer"></span>
-                <span class="options__radio-title">Только растительное</span>
-              </label>
-              <label class="options__control">
-                <input
-                  class="options__input visually-hidden"
-                  type="radio"
-                  name="type-of-milk"
-                  value="no-milk"
-                  disabled
-                />
-                <span class="options__radio-pointer"></span>
-                <span class="options__radio-title">Без молока</span>
-              </label>
+            <fieldset class="control-group">
+              <legend class="control-group__title">Наличие молока</legend>
+              <div class="control-group__inputs">
+                <label class="control">
+                  <input
+                    class="control__input visually-hidden"
+                    type="radio"
+                    name="type-of-milk"
+                    value="milk"
+                    checked
+                  />
+                  <span class="control__pointer"></span>
+                  <span class="control__title">Неважно</span>
+                </label>
+                <label class="control">
+                  <input
+                    class="control__input visually-hidden"
+                    type="radio"
+                    name="type-of-milk"
+                    value="animal-milk"
+                  />
+                  <span class="control__pointer"></span>
+                  <span class="control__title">Только животное</span>
+                </label>
+                <label class="control">
+                  <input
+                    class="control__input visually-hidden"
+                    type="radio"
+                    name="type-of-milk"
+                    value="plant-milk"
+                  />
+                  <span class="control__pointer"></span>
+                  <span class="control__title">Только растительное</span>
+                </label>
+                <label class="control">
+                  <input
+                    class="control__input visually-hidden"
+                    type="radio"
+                    name="type-of-milk"
+                    value="no-milk"
+                    disabled
+                  />
+                  <span class="control__pointer"></span>
+                  <span class="control__title">Без молока</span>
+                </label>
+              </div>
             </fieldset>
-            <fieldset class="sort-form__country-from country-from">
-              <legend class="country-from__title">Страна произрастания</legend>
-              <label class="country-from__control">
-                <input
-                  class="country-from__input visually-hidden"
-                  type="checkbox"
-                  name="brazil"
-                  checked
-                />
-                <span class="country-from__check-pointer"></span>
-                <span class="country-from__check-title">Бразилия</span>
-              </label>
-              <label class="country-from__control">
-                <input
-                  class="country-from__input visually-hidden"
-                  type="checkbox"
-                  name="ethiopia"
-                />
-                <span class="country-from__check-pointer"></span>
-                <span class="country-from__check-title">Эфиопия</span>
-              </label>
-              <label class="country-from__control">
-                <input
-                  class="country-from__input visually-hidden"
-                  type="checkbox"
-                  name="colombia"
-                />
-                <span class="country-from__check-pointer"></span>
-                <span class="country-from__check-title">Колумбия</span>
-              </label>
-              <label class="country-from__control">
-                <input
-                  class="country-from__input visually-hidden"
-                  type="checkbox"
-                  name="catalog__slider"
-                />
-                <span class="ccountry-from__check-pointer"></span>
-                <span class="country-from__check-title">Коста-Рика</span>
-              </label>
-              <label class="country-from__control">
-                <input
-                  class="country-from__input visually-hidden"
-                  type="checkbox"
-                  name="peru"
-                />
-                <span class="country-from__check-pointer"></span>
-                <span class="country-from__check-title">Перу</span>
-              </label>
+            <fieldset class="control-group">
+              <legend class="control-group__title">Страна произрастания</legend>
+              <div class="control-group__inputs">
+                <label class="control">
+                  <input
+                    class="control__input visually-hidden"
+                    type="checkbox"
+                    name="brazil"
+                    checked
+                  />
+                  <span class="control__pointer"></span>
+                  <span class="control__title">Бразилия</span>
+                </label>
+                <label class="control">
+                  <input
+                    class="control__input visually-hidden"
+                    type="checkbox"
+                    name="ethiopia"
+                  />
+                  <span class="control__pointer"></span>
+                  <span class="control__title">Эфиопия</span>
+                </label>
+                <label class="control">
+                  <input
+                    class="control__input visually-hidden"
+                    type="checkbox"
+                    name="colombia"
+                  />
+                  <span class="control__pointer"></span>
+                  <span class="control__title">Колумбия</span>
+                </label>
+                <label class="control">
+                  <input
+                    class="control__input visually-hidden"
+                    type="checkbox"
+                    name="costa-rica"
+                  />
+                  <span class="control__pointer"></span>
+                  <span class="control__title">Коста-Рика</span>
+                </label>
+                <label class="control">
+                  <input
+                    class="control__input visually-hidden"
+                    type="checkbox"
+                    name="peru"
+                  />
+                  <span class="control__pointer"></span>
+                  <span class="control__title">Перу</span>
+                </label>
+              </div>
             </fieldset>
-            <div class="sort-form__button-wrapper">
-              <button class="sort-form__button button" type="submit">
+            <div class="form__button-wrapper">
+              <button class="form__button button" type="submit">
                 Применить
               </button>
-              <button class="sort-form__button button" type="reset">
+              <button
+                class="form__button button button--secondary"
+                type="reset"
+              >
                 Сбросить
               </button>
             </div>
@@ -540,7 +493,7 @@
         <div class="catalog__container container">
           <h2 class="visually-hidden">Каталог продукции</h2>
           <div class="catalog__wrapper">
-            <select class="catalog__selector" aria-label="Сортировка">
+            <select class="catalog__selector control__select" aria-label="Сортировка">
               <option class="catalog__option" value="cheap">
                 Сначала дешевые
               </option>
@@ -852,21 +805,29 @@
               </div>
             </li>
           </ul>
-          <div class="catalog__slider slider">
+          <div class="catalog__pagination pagination">
+            <button
+              class="pagination__arrow-button arrow-button"
+              type="button"
+            ></button>
             <button class="visually-hidden" type="button">Назад</button>
-            <ul class="slider__list">
-              <li class="slider__item pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item button button--page">
                 <a class="pagination__link">1</a>
               </li>
-              <li class="slider__item pagination pagination--special">
+              <li class="pagination__item button button--page">
                 <a class="pagination__link pagination__link--special" href="#"
                   >2</a
                 >
               </li>
-              <li class="slider__item pagination">
+              <li class="pagination__item button button--page">
                 <a class="pagination__link" href="#">3</a>
               </li>
             </ul>
+            <button
+              class="pagination__arrow-button arrow-button"
+              type="button"
+            ></button>
             <button class="visually-hidden" type="button">Вперед</button>
           </div>
         </div>
@@ -878,50 +839,50 @@
         <div class="main-footer__map map">
           <picture class="map__picture">
             <source
-          media="(min-width: 1440px)"
-          type="image/webp"
-          srcset="
-            images/map-pin-desktop@1x.webp 1x,
-            images/map-pin-desktop@2x.webp 2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          type="image/webp"
-          srcset="
-            images/map-pin-tablet@1x.webp 1x,
-            images/map-pin-tablet@2x.webp 2x
-          "
-        />
-        <source
-          type="image/webp"
-          srcset="
-            images/map-pin-mobile@1x.webp 1x,
-            images/map-pin-mobile@2x.webp 2x
-          "
-        />
-        <source
-          media="(min-width: 1440px)"
-          srcset="
-            images/map-pin-desktop@1x.png 1x,
-            images/map-pin-desktop@2x.png 2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            images/map-pin-tablet@1x.png 1x,
-            images/map-pin-tablet@2x.png 2x
-          "
-        />
-        <img
-          class="map__image"
-          src="images/map-pin-mobile@1x.png"
-          srcset="images/map-pin-mobile@2x.png 2x"
-          width="320"
-          height="420"
-          alt="Офис компании по адресу Санкт-Петербург, набережная реки Карповки, дом 5"
-        />
+              media="(min-width: 1440px)"
+              type="image/webp"
+              srcset="
+                images/map-pin-desktop@1x.webp 1x,
+                images/map-pin-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              type="image/webp"
+              srcset="
+                images/map-pin-tablet@1x.webp 1x,
+                images/map-pin-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                images/map-pin-mobile@1x.webp 1x,
+                images/map-pin-mobile@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                images/map-pin-desktop@1x.png 1x,
+                images/map-pin-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/map-pin-tablet@1x.png 1x,
+                images/map-pin-tablet@2x.png 2x
+              "
+            />
+            <img
+              class="map__image"
+              src="images/map-pin-mobile@1x.png"
+              srcset="images/map-pin-mobile@2x.png 2x"
+              width="320"
+              height="420"
+              alt="Офис компании по адресу Санкт-Петербург, набережная реки Карповки, дом 5"
+            />
           </picture>
         </div>
       </div>

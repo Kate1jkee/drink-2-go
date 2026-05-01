@@ -46,3 +46,54 @@
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
 }
+
+.button--page {
+   @include font-text-primary(16px, 150%, $base-primary);
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: $base-white;
+  color: $base-primary;
+
+  &:hover,
+  &:focus-visible {
+    background: $alt-primary-lighter;
+    color: $base-white;
+  }
+
+  &:active {
+    background: $alt-primary-darker;
+    color: $base-white;
+  }
+
+  &:disabled {
+    background: $alt-light-grey;
+    color: $base-white;
+  }
+
+  &-active {
+    pointer-events: none;
+    color: $base-black;
+  }
+}
+
+.button--secondary {
+  @include font-text-primary(16px, 150%, $base-primary);
+  height: 40px;
+  background: $base-white;
+
+  &:hover,
+  &:focus-visible {
+    color: $base-white;
+  }
+
+  &:active {
+    color: $base-white;
+  }
+
+  &:disabled {
+    background: $alt-light-grey;
+    color: $base-white;
+  }
+}

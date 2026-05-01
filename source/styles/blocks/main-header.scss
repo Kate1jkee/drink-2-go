@@ -8,6 +8,12 @@
   justify-content: space-between;
   align-items: center;
   min-height: 60px;
+  margin: 0 auto;
+}
+
+.main-header__actions {
+   display: flex;
+  align-items: center;
 }
 
 .main-header__logo {
@@ -80,9 +86,31 @@
       }
     }
   }
+
+   .main-header__container {
+    min-height: 80px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__nav {
+    display: block;
+    margin-left: 30px;
+  }
+
+   .main-header__actions {
+    margin-left: auto;
+  }
 }
 
-.main-header__actions {
-   display: flex;
-  align-items: center;
+@include desktop {
+  .main-header__container {
+    min-height: 80px;
+  }
+
+  .main-header__nav {
+    margin-left: 60px;
+  }
 }
