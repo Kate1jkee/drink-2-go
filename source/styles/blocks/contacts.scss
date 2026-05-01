@@ -1,5 +1,6 @@
 .contacts {
   padding: 20px 0;
+  width: 280px;
 }
 
 .contacts__title {
@@ -72,4 +73,16 @@
     -webkit-mask-position: center;
     -webkit-mask-size: contain;
   }
+}
+
+@include tablet {
+  .contacts {
+ width: 223px;
+}
+}
+
+@include desktop {
+   .contacts {
+ width: 317px;
+}
 }

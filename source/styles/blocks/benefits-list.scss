@@ -1,5 +1,7 @@
 .benefits-list {
   @include list;
+  display: flex;
+  flex-direction: column;
 }
 
 .benefits-card {
@@ -19,4 +21,28 @@
 
 .benefits-card__description {
   margin: 0;
+}
+
+@include tablet {
+.benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+  }
+
+  .benefits-list__item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@include desktop {
+  .benefits-list {
+     flex-direction: row;
+    flex-wrap: nowrap; 
+    gap: 20px;
+  }
+
+  .benefits-list__item {
+    flex: 1 1 calc(25% - 20px);
+  }
 }

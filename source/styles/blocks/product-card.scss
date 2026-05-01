@@ -4,10 +4,15 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  width: 280px;
 }
 
 .product-card:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.product-card--hidden {
+  display: none;
 }
 
 .product-card__link-image {
@@ -53,4 +58,20 @@
 
 .product-card__link--title {
   text-decoration: none;
+}
+
+@include tablet {
+.product-card {
+  width: 349px;
+}
+
+.product-card:not(:last-child) {
+  margin-bottom: 0;
+}
+}
+
+@include desktop {
+  .product-card {
+  width: 317px;
+}
 }

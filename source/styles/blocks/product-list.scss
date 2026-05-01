@@ -1,3 +1,15 @@
 .product-list {
 @include list;
+display: flex;
+flex-direction: column;
 }
+
+@include tablet {
+    .product-list {
+flex-direction: row;
+flex-wrap: wrap;
+gap: 30px;
+}
+}
+
+@include desktop {}

@@ -1,5 +1,6 @@
 .shop {
   padding: 20px 0;
+  width: 280px;
 }
 
 .shop__title {
@@ -26,4 +27,16 @@
   line-height: 16px;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+@include tablet {
+  .shop  {
+ width: 223px;
+}
+}
+
+@include desktop {
+   .shop  {
+ width: 317px;
+}
 }

@@ -1,5 +1,6 @@
 .media {
   padding: 20px 0;
+  width: 280px;
 }
 
 .media__title {
@@ -26,4 +27,16 @@
   line-height: 16px;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+@include tablet {
+  .media {
+ width: 222px;
+}
+}
+
+@include desktop {
+   .media  {
+ width: 318px;
+}
 }

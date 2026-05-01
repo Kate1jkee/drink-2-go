@@ -1,3 +1,26 @@
 .catalog {
   background-color: $bg-lightest-grey;
 }
+
+.catalog__selector-wrapper {
+  display: flex;
+   align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.catalog__selector-mark {
+  font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: $base-black;
+width: 107px;
+}
+
+@include tablet {
+.catalog__selector-wrapper {
+justify-content: end;
+}
+}
+

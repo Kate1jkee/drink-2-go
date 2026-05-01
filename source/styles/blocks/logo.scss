@@ -1,0 +1,18 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo__text {
+  // по умолчанию (мобилка/планшет) скрыт
+  display: none;
+
+  @include desktop {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: $base-black;
+  }
+}

@@ -1,0 +1,27 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 44px;
+}
+
+.pagination__list {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination__link {
+    text-decoration: none;
+}
+
+  @include tablet {
+  .pagination {
+justify-content: end;
+gap: 20px;
+  }
+  }
+
+@include desktop {
+
+}
