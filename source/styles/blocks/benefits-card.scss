@@ -1,9 +1,9 @@
 .benefits-card {
   position: relative;
+
   padding-top: 66px;
+
   text-align: center;
-  display: flex;
-    flex-direction: column;
 }
 
 .benefits-card::before {
@@ -15,9 +15,11 @@
   width: 52px;
   height: 56px;
 
-  transform: translateX(-50%);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+
+  transform: translateX(-50%);
 }
 
 .benefits-card--speed::before {
@@ -36,100 +38,80 @@
   background-image: url("../../icons/icon-eco.svg");
 }
 
+.benefits-card__title {
+  margin: 0 0 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.benefits-card__description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
 @include tablet {
   .benefits-card {
+    min-height: 76px;
     padding-top: 0;
-    padding-left: 82px;
-    align-items: start;
-    text-align: start;
+    padding-left: 72px;
+
+    text-align: left;
   }
 
-  .benefits-card:not(:last-child) {
-    margin-bottom: 0;
+  .benefits-card::before {
+    top: 0;
+    left: 0;
+
+    transform: none;
   }
 
   .benefits-card__title {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 8px;
+    margin: 0 0 8px;
+
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .benefits-card__description {
-    font-size: 14px;
-    line-height: 20px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    max-width: 267px;
+    margin: 0;
 
-   .benefits-card--speed::before {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    font-size: 16px;
+    line-height: 24px;
   }
-
-   .benefits-card--convenience::before {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-   .benefits-card--cheerfulness::before {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-   .benefits-card--eco::before {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  }
-
+}
 
 @include desktop {
   .benefits-card {
-    padding-top: 80px;
+    padding-top: 76px;
     padding-left: 0;
-    align-items: center;
+
+    text-align: center;
+  }
+
+  .benefits-card::before {
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
   }
 
   .benefits-card__title {
-    font-size: 22px;
-    line-height: 30px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .benefits-card__description {
-    font-size: 14px;
-    line-height: 22px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    max-width: 318px;
+    margin: 0 auto;
 
-   .benefits-card--speed::before {
-   top: 0;
-  left: 50%;
-   transform: translateX(-50%);
-  }
-
-   .benefits-card--convenience::before {
-   top: 0;
-  left: 50%;
-   transform: translateX(-50%);
-  }
-
-   .benefits-card--cheerfulness::before {
-  top: 0;
-  left: 50%;
-   transform: translateX(-50%);
-  }
-
-   .benefits-card--eco::before {
-  top: 0;
-  left: 50%;
-   transform: translateX(-50%);
+    font-size: 16px;
+    line-height: 24px;
   }
 }

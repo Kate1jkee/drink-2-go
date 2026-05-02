@@ -5,22 +5,67 @@
 }
 
 .form__button-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @include tablet {
   .form {
-     flex-direction: row;
-  }
- .form__button-wrapper {
     flex-direction: row;
- }
+    flex-wrap: wrap;
+  }
+
+  .form__button-wrapper {
+    flex-direction: row;
+    margin: 0 auto;
+  }
 }
 
 @include desktop {
   .form {
-     flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.form__button {
+  height: 40px;
+}
+
+.form__button-wrapper .form__button:first-child {
+  @include font-text-primary(16px, 150%, $base-white);
+}
+
+@include tablet {
+  .form__button:first-child {
+    width: 137px;
+  }
+
+  .form__button:last-child {
+    width: 120px;
+  }
+}
+
+@include tablet {
+  .form {
+    row-gap: 39px;
+  }
+}
+
+@include tablet {
+  .form .form__control-group:nth-child(3) {
+    margin-left: 26px;
+  }
+}
+
+@include desktop {
+  .form .form__control-group:nth-child(3) {
+    margin-left: 0px;
+  }
+}
+
+@include desktop {
+  .form__button:first-child, .form__button:last-child {
+    width: 149px;
   }
 }

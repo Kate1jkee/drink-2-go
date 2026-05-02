@@ -1,48 +1,30 @@
 .benefits-list {
   @include list;
+
   display: flex;
   flex-direction: column;
-}
-
-.benefits-card {
-  text-align: center;
-}
-
-.benefits-card:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.benefits-card__title {
-  margin: 0 0 4px;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 700;
-}
-
-.benefits-card__description {
-  margin: 0;
+  gap: 32px;
 }
 
 @include tablet {
-.benefits-list {
+  .benefits-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px 20px;
+    gap: 50px 30px;
   }
 
   .benefits-list__item {
-    flex: 1 1 calc(50% - 20px);
+     width: 339px;
   }
 }
 
 @include desktop {
   .benefits-list {
-     flex-direction: row;
-    flex-wrap: nowrap; 
-    gap: 20px;
+    flex-wrap: nowrap;
+    gap: 30px;
   }
 
   .benefits-list__item {
-    flex: 1 1 calc(25% - 20px);
+   width: 318px;
   }
 }

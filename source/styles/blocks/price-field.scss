@@ -1,5 +1,5 @@
 .price-field__inputs {
-    display: flex;
+  display: flex;
   align-items: center;
   gap: 18px;
 }
@@ -11,7 +11,7 @@
 }
 
 .price-field__divider {
- width: 8px;
+  width: 8px;
   height: 2px;
   background: $base-grey;
 }
@@ -20,4 +20,8 @@
   .price-field__divider {
     width: 10px;
   }
+}
+
+.price-field__title {
+  margin-bottom: 30px;
 }

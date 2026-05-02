@@ -1,3 +1,22 @@
 .filters {
   background-color: $bg-lightest-grey;
 }
+
+.filters__price-slider {
+  width: 280px;
+  margin-bottom: 34px;
+}
+
+@include tablet {
+  .filters__price-slider {
+    width: 223px;
+    margin-bottom: 30px;
+  }
+}
+
+@include desktop {
+  .filters__price-slider {
+    width: 318px;
+    margin-bottom: 32px;
+  }
+}

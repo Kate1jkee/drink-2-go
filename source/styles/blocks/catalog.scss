@@ -5,7 +5,6 @@
 .catalog__selector-wrapper {
   display: flex;
    align-items: center;
-  gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 24px;
 }
@@ -16,6 +15,7 @@ font-size: 16px;
 line-height: 150%;
 color: $base-black;
 width: 107px;
+margin-right: 8px;
 }
 
 @include tablet {

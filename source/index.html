@@ -56,7 +56,7 @@
             <span class="visually-hidden">Открыть или закрыть меню</span>
           </button>
         </div>
-        <nav class="main-header__nav main-nav main-nav--open">
+        <nav class="main-header__nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a
@@ -84,223 +84,246 @@
       <h1 class="visually-hidden">
         Интернет-магазин кофейных напитков drink2go
       </h1>
-      <section class="main__promo-selector promo-selector">
-        <div class="promo-selector__container container">
-          <h2 class="visually-hidden">Промо</h2>
+      <section class="main__promo-selector promo">
+        <h2 class="visually-hidden">Промо</h2>
+        <div class="slider">
           <button
-            class="promo-selector__slider-button slider-button"
+            class="slider__arrow-button slider__arrow-button--left"
             type="button"
+            disabled
           >
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
-          <div class="promo-selector__wrapper">
-            <ul class="promo-selector__slider-list slider-list">
-              <li class="slider-list__promo-item promo-item">
-                <!-- Первый слайд-->
-                <picture class="promo-item__image-container">
-                  <source
-                    media="(min-width: 1440px)"
-                    type="image/webp"
-                    srcset="
-                      images/promo-white-drink-desktop@1x.webp 1x,
-                      images/promo-white-drink-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      images/promo-white-drink-desktop@1x.png 1x,
-                      images/promo-white-drink-desktop@2x.png 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                    srcset="
-                      images/promo-white-drink-tablet@1x.webp 1x,
-                      images/promo-white-drink-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      images/promo-white-drink-tablet@1x.png 1x,
-                      images/promo-white-drink-tablet@2x.png 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      images/promo-white-drink-mobile@1x.webp 1x,
-                      images/promo-white-drink-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="promo-item__image"
-                    src="images/promo-white-drink-mobile@1x.png"
-                    srcset="images/promo-white-drink-mobile@2x.png 2x"
-                    width="280"
-                    height="280"
-                    alt="Банка фирменного кофе Декаф Флэт Уайт"
-                  />
-                </picture>
-                <p class="promo-item__mark">Новинка!</p>
-                <h3 class="promo-item__title">Декаф Флэт Уайт</h3>
-                <p class="promo-item__description">
+
+          <ul class="slider__list">
+            <li
+              class="slider__item slider__item--current advertising-card advertising-card--white-drink"
+            >
+              <!-- Первый слайд-->
+              <picture class="advertising-card__image-container">
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/webp"
+                  srcset="
+                    images/promo-white-drink-desktop@1x.webp 1x,
+                    images/promo-white-drink-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    images/promo-white-drink-desktop@1x.png 1x,
+                    images/promo-white-drink-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="
+                    images/promo-white-drink-tablet@1x.webp 1x,
+                    images/promo-white-drink-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/promo-white-drink-tablet@1x.png 1x,
+                    images/promo-white-drink-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/promo-white-drink-mobile@1x.webp 1x,
+                    images/promo-white-drink-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  class="advertising-card__image"
+                  src="images/promo-white-drink-mobile@1x.png"
+                  srcset="images/promo-white-drink-mobile@2x.png 2x"
+                  width="280"
+                  height="280"
+                  alt="Банка фирменного кофе Декаф Флэт Уайт"
+                />
+              </picture>
+              <div class="advertising-card__content">
+                <p class="advertising-card__mark">Новинка!</p>
+                <h3 class="advertising-card__title">Декаф Флэт Уайт</h3>
+                <p class="advertising-card__description">
                   Свежесваренный кофе без кофеина из Эфиопии с натуральным
                   фермерским молоком — то, что нужно для расслабления после
                   тяжёлого рабочего дня
                 </p>
-                <div class="promo-item__footer">
-                  <div class="promo-item__price">
-                    <span class="promo-item__base-price">295₽</span>
-                    <span class="promo-item__discount-price">225₽</span>
+                <div class="advertising-card__footer">
+                  <div class="advertising-card__price">
+                    <span class="advertising-card__base-price">295₽</span>
+                    <span class="advertising-card__discount-price">225₽</span>
                   </div>
-                  <a class="promo-item__link button" href="#"> Заказать </a>
+                  <a class="advertising-card__link button" href="#">
+                    Заказать
+                  </a>
                 </div>
-              </li>
-
-              <li class="slider-list__promo-item promo-item">
-                <!-- Второй слайд-->
-                <picture class="promo-item__image-container">
-                  <source
-                    media="(min-width: 1440px)"
-                    type="image/webp"
-                    srcset="
-                      images/promo-latte-drink-desktop@1x.webp 1x,
-                      images/promo-latte-drink-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      images/promo-latte-drink-desktop@1x.png 1x,
-                      images/promo-latte-drink-desktop@2x.png 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                    srcset="
-                      images/promo-latte-drink-tablet@1x.webp 1x,
-                      images/promo-latte-drink-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      images/promo-latte-drink-tablet@1x.png 1x,
-                      images/promo-latte-drink-tablet@2x.png 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      images/promo-latte-drink-mobile@1x.webp 1x,
-                      images/promo-latte-drink-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="promo-item__image"
-                    src="images/promo-latte-drink-mobile@1x.png"
-                    srcset="images/promo-latte-drink-mobile@2x.png 2x"
-                    width="280"
-                    height="280"
-                    alt="Банка фирменного кофе Лавандовый Латте"
-                  />
-                </picture>
-                <p class="promo-item__mean">Новинка!</p>
-                <h3 class="promo-item__title">Лавандовый Латте</h3>
-                <p class="promo-item__description">
+              </div>
+            </li>
+            <li
+              class="slider__item advertising-card advertising-card--latte-drink"
+            >
+              <!-- Второй слайд-->
+              <picture class="advertising-card__image-container">
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/webp"
+                  srcset="
+                    images/promo-latte-desktop@1x.webp 1x,
+                    images/promo-latte-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    images/promo-latte-desktop@1x.png 1x,
+                    images/promo-latte-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="
+                    images/promo-latte-tablet@1x.webp 1x,
+                    images/promo-latte-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/promo-latte-tablet@1x.png 1x,
+                    images/promo-latte-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/promo-latte-mobile@1x.webp 1x,
+                    images/promo-latte-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  class="advertising-card__image"
+                  src="images/promo-latte-mobile@1x.png"
+                  srcset="images/promo-latte-mobile@2x.png 2x"
+                  width="280"
+                  height="280"
+                  alt="Банка фирменного кофе Лавандовый Латте"
+                />
+              </picture>
+              <div class="advertising-card__content">
+                <p class="advertising-card__mark">Новинка!</p>
+                <h3 class="advertising-card__title">Лавандовый Латте</h3>
+                <p class="advertising-card__description">
                   Невероятное сочетание перуанской высокогорной арабики с
                   молоком ламы и лавандовым сиропом унесёт вас прямо на вершину
                   Радужных гор
                 </p>
-                <div class="promo-item__footer">
-                  <div class="promo-item__price">
-                    <span class="promo-item__base-price">295₽</span>
-                    <span class="promo-item__discount-price">225₽</span>
+                <div class="advertising-card__footer">
+                  <div class="advertising-card__price">
+                    <span class="advertising-card__base-price">285₽</span>
+                    <span class="advertising-card__discount-price">265₽</span>
                   </div>
-                  <a class="promo-item__link button" href="#"> Заказать </a>
+                  <a class="advertising-card__link button" href="#">
+                    Заказать
+                  </a>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li class="slider-list__promo-item promo-item">
-                <!-- Третий слайд-->
-                <picture class="promo-item__image-container">
-                  <source
-                    media="(min-width: 1440px)"
-                    type="image/webp"
-                    srcset="
-                      images/promo-espresso-drink-desktop@1x.webp 1x,
-                      images/promo-espresso-drink-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      images/promo-espresso-drink-desktop@1x.png 1x,
-                      images/promo-espresso-drink-desktop@2x.png 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    type="image/webp"
-                    srcset="
-                      images/promo-espresso-drink-tablet@1x.webp 1x,
-                      images/promo-espresso-drink-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      images/promo-espresso-drink-tablet@1x.png 1x,
-                      images/promo-espresso-drink-tablet@2x.png 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      images/promo-espresso-drink-mobile@1x.webp 1x,
-                      images/promo-espresso-drink-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="promo-item__image"
-                    src="images/promo-espresso-drink-mobile@1x.png"
-                    srcset="images/promo-espresso-drink-mobile@2x.png 2x"
-                    width="280"
-                    height="280"
-                    alt="Банка фирменного кофе Тройной Эспрессо"
-                  />
-                </picture>
-                <p class="promo-item__mean">Новинка</p>
-                <h3 class="promo-item__title">Тройной Эспрессо</h3>
-                <p class="promo-item__description">
+            <li
+              class="slider__item advertising-card advertising-card--espresso-drink"
+            >
+              <!-- Третий слайд-->
+              <picture class="advertising-card__image-container">
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/webp"
+                  srcset="
+                    images/promo-espresso-desktop@1x.webp 1x,
+                    images/promo-espresso-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    images/promo-espresso-desktop@1x.png 1x,
+                    images/promo-espresso-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="
+                    images/promo-espresso-tablet@1x.webp 1x,
+                    images/promo-espresso-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/promo-espresso-tablet@1x.png 1x,
+                    images/promo-espresso-tablet@2x.png 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/promo-espresso-mobile@1x.webp 1x,
+                    images/promo-espresso-mobile@2x.webp 2x
+                  "
+                />
+                <img
+                  class="advertising-card__image"
+                  src="images/promo-espresso-mobile@1x.png"
+                  srcset="images/promo-espresso-mobile@2x.png 2x"
+                  width="280"
+                  height="280"
+                  alt="Банка фирменного кофе Тройной Эспрессо"
+                />
+              </picture>
+              <div class="advertising-card__content">
+                <p class="advertising-card__mark">Новинка!</p>
+                <h3 class="advertising-card__title">Тройной Эспрессо</h3>
+                <p class="advertising-card__description">
                   Мощнее укола адреналина, чернее самой тёмной ночи, этот
                   тройной эспрессо из Колумбии покажет вам, что такое настоящая
                   бодрость
                 </p>
-                <div class="promo-item__footer">
-                  <div class="promo-item__price">
-                    <span class="promo-item__base-price">295₽</span>
-                    <span class="promo-item__discount-price">225₽</span>
+                <div class="advertising-card__footer">
+                  <div class="advertising-card__price">
+                    <span class="advertising-card__base-price">395₽</span>
+                    <span class="advertising-card__discount-price">375₽</span>
                   </div>
-                  <a class="promo-item__link button" href="#"> Заказать </a>
+                  <a class="advertising-card__link button" href="#">
+                    Заказать
+                  </a>
                 </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+          </ul>
 
           <button
-            class="promo-selector__slider-button slider-button"
+            class="slider__arrow-button slider__arrow-button--right"
             type="button"
           >
             <span class="visually-hidden">Следующий слайд</span>
           </button>
-          <button class="slider-pagination-button" type="button"></button>
-          <button class="slider-pagination-button" type="button"></button>
-          <button class="slider-pagination-button" type="button"></button>
+
+          <div class="slider__controls">
+            <button
+              class="slider__control-button slider__control-button--active"
+              type="button"
+            ></button>
+            <button class="slider__control-button" type="button"></button>
+            <button class="slider__control-button" type="button"></button>
+          </div>
         </div>
       </section>
 
@@ -351,9 +374,9 @@
               method="get"
               data-test="filter"
             >
-              <fieldset class="price-field control-group">
-                <legend class="control-group__title">Цена</legend>
-                <div class="price-slider"></div>
+              <fieldset class="form__control-group price-field control-group">
+                <legend class="price-field__title control-group__title">Цена</legend>
+                <div class="filters__price-slider price-slider"></div>
                 <div class="price-field__inputs">
                   <label class="control">
                     <input
@@ -377,7 +400,7 @@
                   </label>
                 </div>
               </fieldset>
-              <fieldset class="control-group">
+              <fieldset class="form__control-group control-group">
                 <legend class="control-group__title">Наличие молока</legend>
                 <div class="control-group__inputs">
                   <label class="control">
@@ -424,7 +447,7 @@
                   </label>
                 </div>
               </fieldset>
-              <fieldset class="control-group">
+              <fieldset class="form__control-group control-group">
                 <legend class="control-group__title">
                   Страна произрастания
                 </legend>
@@ -512,6 +535,7 @@
                     сначала дешевые
                   </option>
                 </select>
+                <span class="control__select-arrow"></span>
               </div>
             </div>
 
