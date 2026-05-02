@@ -19,24 +19,9 @@
   .form__button-wrapper {
     flex-direction: row;
     margin: 0 auto;
+    
   }
-}
 
-@include desktop {
-  .form {
-    flex-direction: column;
-  }
-}
-
-.form__button {
-  height: 40px;
-}
-
-.form__button-wrapper .form__button:first-child {
-  @include font-text-primary(16px, 150%, $base-white);
-}
-
-@include tablet {
   .form__button:first-child {
     width: 137px;
   }
@@ -46,25 +31,20 @@
   }
 }
 
-@include tablet {
+
+@include desktop {
   .form {
-    row-gap: 39px;
+    flex-direction: column;
   }
+
+.form__button {
+  height: 40px;
 }
 
-@include tablet {
-  .form .form__control-group:nth-child(3) {
-    margin-left: 26px;
-  }
+.form__button-wrapper .form__button:first-child {
+  @include font-text-primary(16px, 150%, $base-white);
 }
 
-@include desktop {
-  .form .form__control-group:nth-child(3) {
-    margin-left: 0px;
-  }
-}
-
-@include desktop {
   .form__button:first-child, .form__button:last-child {
     width: 149px;
   }

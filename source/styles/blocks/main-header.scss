@@ -60,9 +60,11 @@
   -webkit-mask-size: contain;
 }
 
-.main-nav--open .main-header__toggle::before {
-  mask-image: url("../../icons/menu-close.svg");
-  -webkit-mask-image: url("../../icons/menu-close.svg");
+.main-header__toggle--open::before {
+  width: 16px;
+  height: 16px;
+  mask-image: url("../../icons/menu-esc.svg");
+  -webkit-mask-image: url("../../icons/menu-esc.svg");
 }
 
 @include tablet {

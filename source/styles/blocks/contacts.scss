@@ -42,7 +42,7 @@
   }
 }
 
-.contacts__phone {
+.contacts__link {
   position: relative;
   display: inline-block;
   padding-left: 24px;
@@ -51,6 +51,7 @@
   line-height: 20px;
   color: $base-black;
   text-decoration: none;
+@include font-text-primary(14px, 143%, $base-black);
 
   &::before {
     content: "";

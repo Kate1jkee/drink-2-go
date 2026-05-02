@@ -9,5 +9,7 @@
 @include desktop {
 .catalog-group {
    flex-direction: row;
+   gap: 30px;
+   justify-content: center;
 }
 }

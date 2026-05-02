@@ -6,3 +6,9 @@ function onSelectClick () {
 }
 
 select.addEventListener('click', onSelectClick);
+
+function onBlurSelect() {
+  arrow.classList.remove('control__select-arrow--open');
+}
+
+select.addEventListener('blur', onBlurSelect);

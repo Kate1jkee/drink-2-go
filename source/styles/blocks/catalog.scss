@@ -24,3 +24,12 @@ justify-content: end;
 }
 }
 
+@include desktop {
+.catalog  {
+width: 1011px;
+}
+
+.catalog__container {
+  padding: 0;
+}
+}

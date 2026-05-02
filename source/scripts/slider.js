@@ -20,10 +20,13 @@ function onLeftButtonClick() {
   const currentSlider = slides[currentSliderIndex];
   if (currentSliderIndex !== 0) {
     currentSlider.classList.remove('slider__item--current');
+    controlsButton[currentSliderIndex].classList.remove('slider__control-button--active');
+
     const prevSlider = slides[currentSliderIndex - 1];
     prevSlider.classList.add('slider__item--current');
-    currentSliderIndex = currentSliderIndex - 1;
+    controlsButton[currentSliderIndex - 1].classList.add('slider__control-button--active');
 
+    currentSliderIndex = currentSliderIndex - 1;
     changeButtonsDisabled();
   }
 }
@@ -37,10 +40,13 @@ function onRightButtonClick() {
   const currentSlider = slides[currentSliderIndex];
   if (currentSliderIndex < slides.length - 1) {
     currentSlider.classList.remove('slider__item--current');
+    controlsButton[currentSliderIndex].classList.remove('slider__control-button--active');
+
     const nextSlider = slides[currentSliderIndex + 1];
     nextSlider.classList.add('slider__item--current');
-    currentSliderIndex = currentSliderIndex + 1;
+    controlsButton[currentSliderIndex + 1].classList.add('slider__control-button--active');
 
+    currentSliderIndex = currentSliderIndex + 1;
     changeButtonsDisabled();
   }
 }
