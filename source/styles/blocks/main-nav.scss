@@ -16,6 +16,7 @@
 
 .main-nav__list {
   @include list;
+
 }
 
 .main-nav__link {
@@ -42,15 +43,16 @@
 
   &:hover,
   &:focus-visible {
-    color: $base-primary;
+    color: $base-black;
   }
 
   &:active {
     background: $base-secondary;
+    color: $base-black;
   }
 
   &--current {
-    color: $base-primary;
+    color: $base-black;
 
     &::before {
       background: $base-primary;
@@ -58,27 +60,8 @@
   }
 }
 
-.main-nav__link--current {
-  color: $base-primary;
-}
-
 .main-nav__item {
   position: relative;
-  text-align: center;
-}
-
-.main-nav__item::before {
-  content: "";
-  position: absolute;
-
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
-  width: 100vw; // 👈 ключ
-  height: 1px;
-
-  background-color: $base-secondary;
 }
 
 .main-nav__item:last-child::after {
@@ -109,11 +92,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
+        flex-wrap: wrap;
+      max-width: 400px;
   }
 
   .main-nav__item {
-    margin-right: 20px;
-
     &::before,
     &::after {
       display: none; 
@@ -130,18 +113,22 @@
 
     &:active {
       color: $base-primary;
+      background-color: $base-secondary;
     }
 
-    &--active {
+    &--current {
       color: $base-primary;
 
       &::before {
         background: $base-primary;
       }
     }
-  }
-}
 
+.main-nav__link--current {
+  color: $base-primary;
+}
+}
+}
 @include desktop {
    .main-nav {
     position: static;
@@ -153,14 +140,14 @@
 
   .main-nav__list {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     margin: 0;
     padding: 0;
     list-style: none;
+    max-width: 500px;
   }
 
   .main-nav__item {
-    margin-right: 0;
 
     &::before,
     &::after {
@@ -169,16 +156,22 @@
   }
 
   .main-nav__link {
-    padding: 36px 0;
+    padding: 32px 20px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     background: transparent;
 
     &::before {
-      bottom: 32px;
+      bottom: 0;
       height: 2px;
       background: transparent;
     }
+
+ &--current::before {
+    background: $base-primary;
+  }
+
+
   }
 }

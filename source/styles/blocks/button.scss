@@ -1,5 +1,5 @@
 .button {
-  @include font-text-primary(14px, 143%, $base-white);
+  @include font-text-primary(14px, 20px, $base-white);
   text-decoration: none;
   border: none;
   display: inline-flex;
@@ -31,7 +31,7 @@
 
 .button--add::before {
   content: "";
-  width: 16px;
+  width: 20px;
   height: 16px;
 
   background-color: currentColor;
@@ -48,34 +48,13 @@
 }
 
 .button--page {
-   @include font-text-primary(16px, 150%, $base-primary);
-  padding: 8px;
   width: 40px;
   height: 40px;
-  padding: 8px;
-  background: $base-white;
+  padding: 0;
+
   color: $base-primary;
-
-  &:hover,
-  &:focus-visible {
-    background: $alt-primary-lighter;
-    color: $base-white;
-  }
-
-  &:active {
-    background: $alt-primary-darker;
-    color: $base-white;
-  }
-
-  &:disabled {
-    background: $alt-light-grey;
-    color: $base-white;
-  }
-
-  &-active {
-    pointer-events: none;
-    color: $base-black;
-  }
+  background-color: transparent;
+  border-radius: 4px;
 }
 
 .button--secondary {
@@ -100,6 +79,8 @@
 
 .button--form {
   width: 100%;
+  min-height: 40px;
+  font-size: 16px;
 }
 
 @include tablet {

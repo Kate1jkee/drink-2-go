@@ -20,8 +20,8 @@
 
 @include desktop {
   .benefits-list {
-    flex-wrap: nowrap;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 29px;
   }
 
   .benefits-list__item {

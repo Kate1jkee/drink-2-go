@@ -15,6 +15,36 @@
 }
 
 .links__wraper {
+padding-bottom: 20px;
+}
+  
+.main-nav .link {
+  &:hover,
+  &:focus-visible {
+    color: $base-black;
+  }
+
+    &:active {
+    color: $base-black;
+  }
+}
+
+@include tablet {
+.main-nav .link {
+  &:hover,
+  &:focus-visible {
+    color: $alt-primary-lighter;
+  }
+
+    &:active {
+    color: $alt-primary-darker;
+  }
+}
+
+}
+
+
+.links__wraper {
   display: flex;
   align-items: center;
   justify-content: space-between;

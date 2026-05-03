@@ -31,11 +31,18 @@
 }
 
 .product-card__title {
-  margin: 0 0 8px;
+  margin: 0 0 4px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   color: $base-black;
+}
+
+.product-card__description {
+  margin: 0;
+  font-weight: 400;
+font-size: 14px;
+line-height: 143%;
 }
 
 .product-card__description {
@@ -54,6 +61,8 @@
    line-height: 32px;
   font-weight: 600;
   color: $base-black;
+  margin-left: -2px;
+    margin-top: -2px;
 }
 
 .product-card__link--title {

@@ -8,6 +8,10 @@
   overflow: hidden;
 }
 
+.advertising-card__content {
+    margin-top: -2px;
+}
+
 .advertising-card__image-container {
   display: block;
   margin: 0 auto 10px;
@@ -34,7 +38,7 @@
 .advertising-card__title {
   margin: 0 auto 10px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 37px;
   line-height: 48px;
   width: 280px;
 }
@@ -46,6 +50,7 @@
 
 .advertising-card__footer {
   display: flex;
+   flex-wrap: wrap;
   justify-content:center;
   align-items: center;
   padding-left: 25px;
@@ -57,6 +62,7 @@
 
 .advertising-card__price {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 6px;
 }
@@ -65,6 +71,7 @@
   color: $base-primary;
   text-decoration: line-through;
   width: 40px;
+  overflow-wrap: anywhere;
 }
 
 .advertising-card__discount-price {
@@ -72,6 +79,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
+  overflow-wrap: anywhere;
 }
 
 .advertising-card__link {
@@ -79,6 +87,10 @@ font-size: 16px;
 line-height: 24px;
  width: 113px;
   min-height: 40px;
+}
+
+.advertising-card__link.button {
+  height: auto;
 }
 
 .advertising-card--white-drink {

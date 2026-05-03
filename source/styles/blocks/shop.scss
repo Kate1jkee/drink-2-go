@@ -1,10 +1,11 @@
 .shop {
   padding: 20px 0;
   width: 280px;
+  padding-bottom: 17px;
 }
 
 .shop__title {
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   color: $base-primary;
   font-size: 14px;
   line-height: 20px;
@@ -15,8 +16,12 @@
   @include list;
 }
 
+.shop__item {
+min-height: 32px;
+}
+
 .shop__item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 
 .shop__link {
@@ -24,6 +29,8 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
+      padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 @include tablet {

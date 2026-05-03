@@ -1,28 +1,36 @@
 .arrow-button {
+  @include font-text-primary(16px, 150%, $base-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 40px;
   height: 40px;
-  padding: 15px;
-  background: $base-white;
+  padding: 0;
+
   color: $base-primary;
-   display: flex; 
-   align-items: center;
-   justify-content: center;
-   width: fit-content;
+  background-color: $base-white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 
   &:hover,
   &:focus-visible {
-    background: $alt-primary-lighter;
     color: $base-white;
+    background-color: $alt-primary-lighter;
+    outline: none;
   }
 
   &:active {
-    background: $alt-primary-darker;
     color: $base-white;
+    background-color: $alt-primary-darker;
   }
 
   &:disabled {
-    background: $alt-light-grey;
     color: $base-white;
+    background-color: $alt-light-grey;
+    cursor: default;
   }
 }
 
@@ -31,7 +39,7 @@
   width: 10px;
   height: 10px;
 
-  background-color: $base-black;
+  background-color: currentColor;
 
   mask-repeat: no-repeat;
   mask-position: center;
@@ -58,14 +66,20 @@
   }
 
   @include tablet {
-  .arrow-button__text {
-display: inline-flex;
-}
-
-.arrow-button::before {
-  display: none;
-}
+   .arrow-button {
+    width: auto;
+    min-width: 91px;
+    padding: 8px 20px;
   }
+
+  .arrow-button__text {
+    display: inline-flex;
+  }
+
+  .arrow-button::before {
+    display: none;
+  }
+}
 
 @include desktop {
 

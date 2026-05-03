@@ -6,19 +6,26 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   min-height: 60px;
   margin: 0 auto;
+  padding-right: 0;
 }
 
 .main-header__actions {
    display: flex;
-  align-items: center;
+  align-items: flex-start;
+   min-height: 60px;
 }
 
 .main-header__logo {
-  display: block;
+  min-height: 60px;
 }
+
+  .main-header__nav {
+    min-height: 60px;
+  }
+
 
 .main-header__toggle {
   position: relative;
@@ -73,6 +80,7 @@
   }
 
 .main-header__logo {
+  min-height: 80px;
     order: 1;
   }
 
@@ -84,17 +92,19 @@
     display: block;
     margin-left: 30px;
     order: 2;
+    min-height: 80px;
   }
 
    .main-header__actions {
     margin-left: auto;
     order: 3;
+     min-height: 80px;
   }
 }
 
 @include desktop {
   .main-header__container {
-      min-height: 96px;
+      min-height: 80px;
     max-width: 1240px;
     padding: 0 20px;
     margin: 0 auto;

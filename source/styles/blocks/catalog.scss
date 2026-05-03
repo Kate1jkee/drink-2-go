@@ -6,7 +6,9 @@
   display: flex;
    align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  justify-content: space-between;
+  padding-left: 3px;
 }
 
 .catalog__selector-mark {

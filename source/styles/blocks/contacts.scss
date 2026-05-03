@@ -1,10 +1,11 @@
 .contacts {
   padding: 20px 0;
   width: 280px;
+  padding-top: 17px;
 }
 
 .contacts__title {
-  margin: 0 0 12px;
+  margin: 0 0 20px;
   color: $base-primary;
   font-size: 14px;
   font-weight: 700;
@@ -13,7 +14,7 @@
 .contacts__address {
   position: relative;
   margin: 0 0 16px;
-  padding-left: 24px;
+  padding-left: 20px;
 
   font-size: 14px;
   line-height: 20px;
@@ -45,7 +46,7 @@
 .contacts__link {
   position: relative;
   display: inline-block;
-  padding-left: 24px;
+  padding-left: 17px;
 
   font-size: 14px;
   line-height: 20px;
@@ -74,6 +75,10 @@
     -webkit-mask-position: center;
     -webkit-mask-size: contain;
   }
+}
+
+.contacts__link .link {
+  font-size: 14px;
 }
 
 @include tablet {
